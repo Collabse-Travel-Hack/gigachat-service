@@ -7,3 +7,7 @@ python-multipart
 passlib[bcrypt]
 pydantic[email]
 starlette
+
+gigachat
+langchain-community
+langchain-core
