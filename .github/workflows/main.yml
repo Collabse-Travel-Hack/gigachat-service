@@ -34,4 +34,4 @@ jobs:
     - name: Push Docker image
       run: |
         docker push ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE }}:${{ github.sha }}
-        docker push ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE }}:latest
+        docker push ${{ secrets.DOCKER_HUB_USERNAME }}/${{ env.IMAGE }}:${{env.DEV_TAG}}
