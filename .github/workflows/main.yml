@@ -1,4 +1,4 @@
-name: Build and Deploy FastAPI to Google Cloud Kubernetes
+name: Build and FastAPI to Docker Hub
 
 on:
   push:
@@ -10,7 +10,7 @@ env:
 
 jobs:
   build-and-deploy:
-    runs-on: ubuntu-latest
+    runs-on: self-hosted
 
     steps:
     - name: Checkout code
